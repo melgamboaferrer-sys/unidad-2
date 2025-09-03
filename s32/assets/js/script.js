@@ -56,9 +56,28 @@ class chef extends Person {
         restaurant,
         favoriteFood
     ) {
-        
+
         super(firstName, lastName, age, height, weight, cellphone);
         this.restaurant = restaurant;
         this.favoriteFood = favoriteFood;
     }
+
+    introduce() {
+    return `Hola, me llamo ${this.firstName} ${this.lastName} y soy chef en el restaurante ${this.restaurant}.`;
 }
+}
+
+let chef1 = new chef(
+    "Mauricio",
+    "Hernandez",
+    20,
+    1.75,
+    69,
+    "987654321",
+    "los tres amigos",
+    "aereopuerto"
+);
+
+console.log("POLIMORFISMO");
+console.log(chef1.introduce());
+console.log(person1.introduce());
