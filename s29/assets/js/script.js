@@ -24,4 +24,5 @@ while (iterador <= 1) {
 let Number = 167
 
 while (Number <= 349);
-iterador 
+console.log(number);
+number += 24;
