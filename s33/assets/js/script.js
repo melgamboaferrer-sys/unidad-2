@@ -20,3 +20,11 @@ console.log("SELECCIONAR POR ETIQUETA");
 let title = document.getElementsByTagName("h3");
 console.log(title);
 console.log(title[2].innerText);
+
+console.log("SELECCIONAR POR SINTASIS CSS - QUERY-SELECTOR");
+
+let queryMainTitle = document.querySelector("#main-title");
+console.log(queryMainTitle);
+
+let queryMainTexts = document.querySelectorAll(".main-text");
+console.log(queryMainTexts);
