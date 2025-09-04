@@ -31,3 +31,5 @@ console.log(queryMainTexts);
 
 document.getElementById("clikear").addEventListener("click",function() {
     console.log("HAZ HECHO CLICK EN EL BOTON")});
+
+
