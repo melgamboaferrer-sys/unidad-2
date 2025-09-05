@@ -30,6 +30,43 @@ console.log(fruits.includes("naranja")); //true
 console.log(fruits.includes("kiwi")); //false
 
 console.log("indexOf");
-//includes(x) -> preguntar si x es un elemento del array0. Retorna un buleano
+//includes(x) -> preguntar si x es un elemento del array. Retorna un buleano
 console.log(fruits.indexOf("naranja")); // 1
 console.log(fruits.indexOf("kiwi")); // -1
+
+console.log("join");
+//join() -> toma todos los elementos del array y los junta en una string. por defecto usa el caracter coma (",") pero opcionalmente podemos incdicar el caracter que queremos usar.
+console.log(fruits.join());
+console.log(fruits.join("/"));
+console.log(fruits.join("#"));
+console.log(fruits.join("*"));
+
+console.log("----------------------------------------------------------");
+
+fruits = ["manzana", "naranja", "pera", "mango"];
+console.log(fruits);
+
+console.log("slice");
+//slice(inicio, fin)-> retorna una copia del arreglo (no modifica el arreglo original). Corta desde el indice "inicio". opcionalmente se le puede indicar el indice de "fin", este indice es exclusivo. si no se le indica el fin, por defecto corta hasta el final.
+
+//corta el arreglo desde el indice 2 hasta el final
+console.log(fruits.slice(2));
+
+//corta el arreglo desde el indice 2 hasta el 4, sin tomar este ultimo.
+console.log(fruits.slice(2, 4));
+
+console.log("splice");
+//splice(inicio, cantidad, nuevos elementos...) -> modifica el arreglo original. desde "inicio" se eliminan la "cantidad" de elementos indicados.
+
+//corta hasta el indice 2 exclusivo
+// fruits.splice(2);
+// console.log(fruits);
+
+//desde el indice 2, elimina dos elementos
+// fruits.splice(2, 2);
+// console.log(fruits);
+
+// desde el indice 2, elimina dos elementos y desde esa misma posicion agrega los nuevos elementos 
+fruits.splice(2, 2, "sandia", "kiwi", "arandano");
+console.log(fruits);
+
