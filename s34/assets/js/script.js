@@ -70,3 +70,36 @@ console.log("splice");
 fruits.splice(2, 2, "sandia", "kiwi", "arandano");
 console.log(fruits);
 
+console.log("----------------------------------------------------------");
+
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(nums);
+
+console.log("map");
+
+let numsMap = nums.map((x) => x + 3);
+console.log(numsMap);
+
+//multliplica los elementos por x
+console.log(nums.map((x) => x * 10));
+
+//mostrar strings
+console.log(nums.map((x) => `numero ${x}`));
+
+console.log("filter");
+
+let filteredNums = nums.filter((x) => x > 5);
+console.log(filteredNums);
+
+console.log(nums.filter((x) => x < 6 ));
+
+console.log(nums.filter((x) => x % 2 === 0));
+
+console.log("reduce");
+
+console.log(nums.reduce((a, b) => a + b, 0));
+
+console.log(nums.reduce((a, b) => a * b, 1));
+
+console.log("----------------------------------------------------------");
+
